@@ -1,10 +1,14 @@
 body {
-  background: #e4c9a8;
+  background: white;
   font-family: "Roboto", sans-serif;
 }
 
 a {
-  color: #885df1;
+  color: #6a7f60;
+}
+
+a:hover {
+  color: #d67d3e;
 }
 
 .weather-app {
@@ -13,10 +17,11 @@ a {
   margin: 60px auto;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  box-shadow: 0 0 10px rgb(214, 125, 62, 0.4);
 }
 
 header {
+  color: #d67d3e;
   border-bottom: 1px solid #f9f7fe;
   padding-bottom: 30px;
 }
@@ -24,17 +29,18 @@ header {
 .search-input {
   background-color: #f9f7fe;
   border: none;
-  color: rgba(39, 33, 66, 0.4);
+  color: #585563;
   font-size: 16px;
   padding: 20px;
-  width: 75%;
-  border-radius: 6px;
+  width: 80%;
+  line-height: 1;
+  border-radius: 5px;
 }
 
 .search-button {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #885df1;
+  background-color: #e8a800;
   color: white;
   border: none;
   padding: 20px;
@@ -42,12 +48,19 @@ header {
   border-radius: 5px;
 }
 
+.search-button:hover {
+  background-color: #d67d3e;
+  color: white;
+}
+
 main {
   padding: 30px 0;
+  color: #585563;
 }
 
 .current-temperature {
   font-size: 48px;
+  color: #585563;
 }
 
 .current-weather {
@@ -61,14 +74,14 @@ main {
   margin: 0;
 }
 .current-details {
-  color: rgba(39, 33, 66, 0.4);
+  color: #585563;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
 .current-details strong {
-  color: #f65282;
+  color: #d67d3e;
 }
 
 .current-temperature-icon {
@@ -93,6 +106,5 @@ footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
   padding-top: 15px;
-
-  color: rgba(39, 33, 66, 0.4);
+  color: #585563;
 }

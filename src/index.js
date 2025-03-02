@@ -31,7 +31,7 @@ function formatDate(date) {
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
 
   let formattedDay = days[day];
@@ -42,6 +42,8 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector(".current-temperature-value");
   let currentTemperature = Math.round(response.data.temperature.current);
   temperatureElement.innerHTML = currentTemperature;
+
+  console.log(response.data);
 }
 
 let searchForm = document.querySelector("#search-form");
