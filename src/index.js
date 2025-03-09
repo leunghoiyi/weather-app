@@ -67,3 +67,28 @@ window.onload = function () {
   searchInputElement.value = "Tallinn"; // Set the input value to Tallinn
   search(new Event("submit")); // Trigger the search function as if the form is submitted
 };
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+            <div class="weather-forecast-date">${day}</div>
+            <div class="weather-forecast-icon">☀️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-max-temperature">15</div>
+              <div class="weather-forecast-min-temperature">9</div>
+            </div></div>
+          
+         `;
+  });
+
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
