@@ -54,13 +54,17 @@ header {
 }
 
 main {
-  padding: 30px 0;
+  padding: 28px 0;
   color: #585563;
 }
 
 .current-temperature {
   font-size: 48px;
   color: #585563;
+  white-space: nowrap; /* Prevent content from wrapping to the next line */
+  overflow: hidden; /* Prevent overflow if it does not fit */
+  width: 35%;
+  text-align: right;
 }
 
 .current-weather {
@@ -69,10 +73,13 @@ main {
 }
 
 .current-city {
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 900;
   margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
 }
+
 .current-details {
   color: #585563;
   font-size: 16px;
@@ -80,8 +87,9 @@ main {
   line-height: 24px;
 }
 
-.current-details strong {
+.condition {
   color: #d67d3e;
+  font-weight: bold;
 }
 
 .humidity {
@@ -98,18 +106,17 @@ main {
   position: relative;
   top: 8px;
   font-size: 40px;
-  margin-right: 10px;
 }
 
 .current-temperature-value {
-  font-size: 80px;
+  font-size: 64px;
   font-weight: bold;
 }
 
 .current-temperature-unit {
-  font-size: 28px;
+  font-size: 24px;
   position: relative;
-  top: -38px;
+  top: -24px;
 }
 
 .weather-forecast {

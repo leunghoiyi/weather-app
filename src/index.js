@@ -42,7 +42,7 @@ function displayTemperature(response) {
   let windElement = document.querySelector(".wind");
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   let iconElement = document.querySelector(".current-temperature-icon");
-  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon" />`;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon" alt="${response.data.condition.description}" />`;
 
   console.log(response);
   console.log(response.data.time);
