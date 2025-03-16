@@ -126,8 +126,8 @@ main {
 
 .weather-forecast-icon {
   text-align: center;
-  font-size: 28px;
-  margin-top: 10px;
+  width: 50%;
+  margin-top: 4px;
 }
 
 .weather-forecast-temperatures {
@@ -135,18 +135,18 @@ main {
   color: #d67d3e;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .weather-forecast-max-temperature {
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 6px;
   display: inline;
 }
 
 .weather-forecast-min-temperature {
   display: inline;
-  padding: 0 10px;
+  padding: 0 6px;
 }
 
 footer {
